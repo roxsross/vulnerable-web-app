@@ -1,0 +1,18 @@
+{
+  "name": "websec",
+  "version": "0.0.1",
+  "description": "websec examples",
+  "main": "server.js",
+  "dependencies": {
+        "async"               : "0.2.6",
+        "request"             : "2.27.0",
+        "bcrypt"              : "0.7.7",
+        "express-handlebars"  : "2.0.1",
+        "express-subdomain"   : "1.0.1",
+        "body-parser"         : "1.13.0",
+        "express-session"     : "1.11.0"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}

@@ -1,0 +1,3 @@
+This page is vulnerable to directory traversal! Using unix dot notation, you can access system files that you shouldn't be able to. Html encoding is necessary here, since most browsers will resolve '.'s in the url.
+
+<!-- If you're stuck, try appending something similar to %2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fetc%2Fpasswd to the url -->

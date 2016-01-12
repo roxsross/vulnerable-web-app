@@ -1,0 +1,16 @@
+This tutorial will not directly include RCE and injection examples.
+<br><br>
+Why?
+<br><br>
+Due to the possibility of cross-site request forgery, it would actually open up your computer to exploitation.
+<br><br>
+For example, consider the scenario in which this server was running on localhost:8000, and the path /rce/command would attempt to execute `command` on your computer. The application is not actually secure just because it is running on localhost. If a malicious website were to perform a CSRF POST request to localhost:8000, it could choose the value of command and effectively compromise your computer.
+<br><br>
+The only safe way to allow this would be to jail the server in a virtual environment, but we will not be doing so in this server since it is intended to be barebones.
+<br><br>
+To read more on localhost CSRF examples, see here: <a href="https://en.wikipedia.org/wiki/Cross-site_request_forgery#Example_and_characteristics">https://en.wikipedia.org/wiki/Cross-site_request_forgery#Example_and_characteristics</a>
+<br><br>
+To test RCE and Injection in a sandboxed environment, try <a href="https://hack.me/101347/simple-remote-code-execution.html">https://hack.me/101347/simple-remote-code-execution.html</a> and <a href="https://hack.me/102131/very-basic-sql-injection.html">https://hack.me/102131/very-basic-sql-injection.html</a>
+
+<br><br><br>
+Note: The directory traversal example in this server is <i>not</i> vulnerable due to the Same Origin Policy. While attackers can execute a request on your behalf with CSRF, they cannot read the results or the contents of the pages.

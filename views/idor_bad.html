@@ -1,0 +1,7 @@
+{{#unless notNum}}
+This is a private page that should only be viewable by user <code>{{id}}</code>. You've exploited an insecure direct object reference to view this!
+{{/unless}}
+
+{{#if notNum}}
+    Invalid user ID. Please try again.
+{{/if}}
