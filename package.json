@@ -7,9 +7,10 @@
         "async"               : "0.2.6",
         "request"             : "2.27.0",
         "bcrypt"              : "0.7.7",
+        "body-parser"         : "1.13.0",
+        "express"             : "4.13.0",
         "express-handlebars"  : "2.0.1",
         "express-subdomain"   : "1.0.1",
-        "body-parser"         : "1.13.0",
         "express-session"     : "1.11.0"
   },
   "engines": {
