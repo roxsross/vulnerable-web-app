@@ -143,4 +143,14 @@ app.get("/auth_bypass",function(req,res){
     return res.render("auth_bypass")
 })
 
+app.get("/general",function(req,res){
+    res.header("X-XSS-Protection", 0)
+    return res.render("general",{payload:req.query.foo})
+})
+
+app.post("/csrf_protected_form",function(req,res){
+    if(!req.body.recoveryemail || !req.body.csrf_token)
+        return res.status(400).send("Missing one or more parameters")
+    return res.status(200).send("Successfully Saved")
+})
 
