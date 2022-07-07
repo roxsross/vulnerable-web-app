@@ -10,6 +10,8 @@ var express = require('express'),
     crypto = require('crypto'),
     fs = require('fs')
 
+const PORT = 8080;
+const HOST = '0.0.0.0' || 'localhost';
 //This is a global variable that only exists to demostrate stored XSS
 var global_var = "This is a greeting to all users that view this page! Change it in the box below."
 
@@ -41,8 +43,8 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', '.html');
 
 //Run the server
-var server = app.listen(6969,"localhost", function () {
-    console.log("Server running on port 6969")
+var server = app.listen(PORT, HOST, function () {
+    console.log("Server running on port 8080")
 })
 
 app.get("/",function(req,res){
