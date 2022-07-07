@@ -45,7 +45,7 @@ app.set('view engine', '.html');
 //Run the server
 app.listen(process.env.PORT || 8080);
 
-console.log(`Example app listening on http://${HOST}:${PORT} or http://localhost:${PORT} !`);
+// console.log(`Example app listening on http://${HOST}:${PORT} or http://localhost:${PORT} !`);
 
 app.get("/",function(req,res){
     return res.render("main",{})
