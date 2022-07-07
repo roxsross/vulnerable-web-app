@@ -10,7 +10,7 @@
             "express": "^4.18.1",
             "express-handlebars": "2.0.1",
             "express-session": "^1.17.3",
-            "express-subdomain": "1.0.1",
+            "express-subdomain": "1.0.5",
             "request": "2.88.2"
       }
 }
