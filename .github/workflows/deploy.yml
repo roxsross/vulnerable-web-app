@@ -1,12 +1,10 @@
 name: Deploy Vulnerable Application                                  # workflow name
-# Only trigger, when the build workflow succeeded
+
 on:
   push:
     branches:
       - master
-
 jobs:
-
   deploy-heroku:
     name: Deploy Heroku
     runs-on: ubuntu-latest
